@@ -1,0 +1,272 @@
+
+/*
+ 1. Reset stylów
+ 2. Logo
+ 3. Menu nawigacyjne
+ 4. Główny kontent
+ 5. Drugoplanowy kontent
+ 6. Stopka*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Globalne style tekstu */
+
+body {
+	font-family: 'Merriweather', serif;
+	line-height: 1.7;
+	background: linear-gradient(to top #660033 #b61212);
+}
+
+p {
+	margin-top: 10px;
+	font-size: 14px;
+
+}
+
+@media screen and (min-width: 1024px){
+	p {
+		font-size: 18px;
+	}
+}
+
+h1,h2,h3{
+	color:#45474f;
+	font-family: 'Source Serif Pro',serif;
+
+}
+
+h1 {
+	
+	font-size: 90px;
+	line-height: 1.2;
+	text-shadow: 1px 1px 5px rgb(46, 146, 173);
+}
+
+h2 {
+	font-size:50px;
+	margin-bottom:50px;
+	text-transform: uppercase;
+}
+
+
+
+h3, label {
+	font-weight: 600;
+	font-size: 22px;
+}
+
+img, h3 {
+	cursor: pointer;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* Style odpowiadające za kolumny, kontenery, sekcje */
+
+/*.column_one_third{
+	width: 33.3333%;
+	float:left;
+}*/
+
+.column_one_third {
+	width: 100%;
+	float: none;
+}
+
+@media screen  and (min-width: 960px) {
+	.column_one_third {
+		width: 33.3333%;
+		float:left;
+	}
+}
+
+section {
+	padding: 90px 0;
+	clear: both;
+}
+
+.container {
+	max-width: 1040px;
+	margin: auto;
+}
+
+.center_text {
+	text-align: center;
+}
+
+
+/* Style przycisków */
+
+.button {
+	display: inline-block;
+	padding: 10px 20px;
+	margin: 15px 0;
+	text-decoration: none;
+	text-transform: uppercase;
+	border: none;	
+	}
+
+.first_button {
+	background: #b7d77f;
+	color: #6D5DAB;	
+}	
+
+.second_button {
+	background: #274790;
+	color: #C4BE34;	
+}
+
+/* Nagłówek strony */
+
+
+
+.top_container {
+	height: 100px;
+	background-image: linear-gradient(to bottom, #C4BE34, #b7d77f);
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.top_container a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.logo {
+
+	font-weight: 600;
+	font-size: 20px;
+	text-align: center;
+	line-height: 60px;
+}
+
+.top_menu li {
+	float: left;
+	line-height: 30px;
+	padding: 0 10px;
+	margin-left: 60px;	
+}
+
+/* Sekcja konentu głównego */
+
+.main_element {
+	/*background: #FFBF00;*/
+	
+}
+
+.main_element h1 {
+	
+	font-weight: 600;
+	margin-bottom: 20px;
+	padding: 125px 0;
+}
+
+
+/* Sekcja - drugi konent */
+
+.second_content img {
+	margin-bottom: 30px;
+}
+
+/* Kontakt */
+
+.contact input {
+	margin-bottom: 18px;
+	border: 1px solid #DDDDDD;
+	padding: 10px;
+	width: 90%;
+}
+
+footer {
+	background: #2d4274;
+	color: #b7d77f;
+	padding: 12px 0;
+}
+
+#place_to_write {
+	padding: 50px 10px;
+}
+
+a:hover {
+	color: #FD8036;
+}
+
+a:focus {
+	color: #660033;
+}
+
+.second_button:hover {
+	color: #FD8036;
+}
+
+.second_button:focus {
+	color: #660033;
+}
+
+h1::first-letter {
+	font-size: 100px;
+	color: #2d4274;
+}
+
+/* cień do zdjęć w 3 małych kolumnach */
+.column_one_third img{
+	box-shadow: 3px 3px 10px #45474f;
+	filter: saturate(100%) contrast(100%);
+}
+
+.footer_style p{
+	text-align: center;
+}
